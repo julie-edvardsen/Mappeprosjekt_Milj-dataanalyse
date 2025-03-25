@@ -25,7 +25,7 @@ df['dt'] = pd.to_datetime(df['dt'])
 
 # Visualisering
 df['month'] = df['dt'].dt.month  # Oppretter en ny kolonne for månedsnummer
-f = sns.barplot(data=df.groupby('month').mean().reset_index(), x='month', y='MW')
+f = sns.barplot(data=df.groupby('month').mean().reset_index(), x='month', y='MW', color='#ffb6c1')
 
 plt.xlabel('Month')
 plt.ylabel('Avg MW')
