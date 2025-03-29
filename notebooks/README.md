@@ -55,6 +55,14 @@ hvorfor vi har valgt csv.
     - pd.read_csv blir brukt for importere filen. 
     - print(df_komplett.info()) blir brukt for å se hvordan csv filen ser ut. 
 
+## Bruk av Pandas SQL (sqldf) til datamanipulering sammenliknet med tradisjonelle Pandas-operasjoner
+
+Pandas SQL er enklere når man skal kode mer komplekse "spørringer". Som man for eksempel kan se i kode del 3 i oppgave 3. 
+
+
+## Uregelmessigheter man kan forvente å møte på og hvordan de kan bli håndtert
+
+
 
 
 
