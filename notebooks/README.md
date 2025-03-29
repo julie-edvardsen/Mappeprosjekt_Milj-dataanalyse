@@ -5,7 +5,7 @@
 
 Vi har funnet to forskjellige miljødatasett fra kaggle.no som vi har valgt å implementere. Kaggle er en nettside hvor dataforskere og utviklere kan hente og dele data for videre bruk i forskning og utviklingsprosjekter.
 
-Det første datasettet vi fant er data hvert 10 minutt fra en vindturbin i Tyrkia for hele 2018. Datasettet ligger på rundt 50 000 linjer, og er ikke helt komplett når det mangler data fra noen av dagene. 
+Det første datasettet vi fant er data hvert 10 minutt fra en vindturbin i Tyrkia for hele 2018. Datasettet ligger på rundt 50 000 linjer, og er ikke helt komplett når det mangler data fra noen av dagene. Brukeren bak datasettet har ikke en lisens på kaggle og der er dermed en faktor vi bruker når vi vurderer datasettet. 
 
 datasett 2
 
