@@ -57,7 +57,10 @@ hvorfor vi har valgt csv.
 
 ## Bruk av Pandas SQL (sqldf) til datamanipulering sammenliknet med tradisjonelle Pandas-operasjoner
 
-Pandas SQL er enklere når man skal kode mer komplekse "spørringer". Som man for eksempel kan se i kode del 3 i oppgave 3. 
+Pandas SQL er enklere når man skal kode mer komplekse "spørringer". Som man for eksempel kan se i kode del 3 i oppgave 3. Dette er mye kortere og mer oversikkelig, samt enklere å lese, enn hvis man skulle gjort det samme med Pandas-operasjoner.
+
+Pandas SQL har også noen begrensninger. Det er ikke optimalt for veldig store datasett, da det er tregere en "normal" Pandas. Og noen få funk  
+
 
 
 ## Uregelmessigheter man kan forvente å møte på og hvordan de kan bli håndtert
