@@ -3,33 +3,37 @@
 
 Åpne API-er er offentlig tilgjengelige grensesnitt som gir tilgang til data eller funksjoner fra et system. I dette tilfelle betyr det at vi kan hente ut miljødata fra forskjellige datasett uten å måtte laste de ned manuelt. Disse API-ene lar oss programmere applikasjonene våre til å automatisk hente ut oppdaterte miljødata direkte fra kildene. 
 
-Vi har funnet to forskjellige miljødatasett fra kaggle.no som vi har valgt å implementere. Kaggle er en nettside hvor dataforskere og utviklere kan hente og dele data for videre bruk i forskning og utviklingsprosjekter.
+Vi har funnet to forskjellige miljødatasett fra nettsiden til Kaggle som vi har valgt å implementere. Kaggle er en nettside hvor dataforskere og utviklere kan hente og dele data for videre bruk i forskning og utviklingsprosjekter. https://www.kaggle.com/datasets 
 
 ### Datasett 1
-Det første datasettet vi fant er data hvert 10 minutt fra en vindturbin i Tyrkia for hele 2018. Datasettet ligger på rundt 50 000 linjer, består av f.eks. vindhastighet, vindretning og generert energi. Datasettet er ikke helt komplett når det mangler data fra noen av dagene. Brukeren bak datasettet har ikke en lisens på kaggle og der er dermed en faktor vi bruker når vi vurderer datasettet, og det står heller ingenting om hvor ofte datasettet vil bli oppdatert. Datafilen er en csv fil på 2 MB, og er hentet ut med Scada Systems. Dataene er lett å hente ut og inne på kaggle står det akkurtatt hva datafilen består av. 
+Det første datasettet vi fant er data hvert 10 minutt fra en vindturbin i Tyrkia for hele 2018. Datasettet ligger på rundt 50 000 linjer, består av f.eks. vindhastighet, vindretning og generert energi. Datasettet er ikke helt komplett når det mangler data fra noen av dagene. Brukeren bak datasettet har ikke en lisens på kaggle og der er dermed en faktor vi bruker når vi vurderer datasettet, og det står heller ingenting om hvor ofte datasettet vil bli oppdatert. Datafilen er en csv fil på 2 MB, og er hentet ut med Scada Systems. Brukervennligheten er også realtivt lav når den ligger på 5.88. Dataene er lett å hente ut og inne på kaggle står det akkurtatt hva datafilen består av. 
+
+Link til datasett: https://www.kaggle.com/datasets/berkerisen/wind-turbine-scada-dataset/data 
 
 ### Datasett 2
-Det andre datasettet vi fant beståer av omfattende verdier av vindkraftproduksjon i Tyskland hvert 15. minutt fra 2011 til 2020. Datasettet ligger på over 400 000 linjer, og har brukervennlighet 10.0 på kaggle. Det betyr at den er lett å bruke/forstå. Datafilen er en csv fil, på 10,5 MB og den vil bli oppdatert ukentlig. Brukeren bak datasettet er lisensert fra CC0: Public Domain, denne lisensen har ingen copyright regler slik at vi kan kopiere, modifiserer og bruk dataene slik vi vil. Les mer om lisensen her: https://creativecommons.org/publicdomain/zero/1.0/ 
+Det andre datasettet vi fant består av omfattende verdier fra vindkraftproduksjon i Tyskland hvert 15. minutt fra 2011 til 2020. Datasettet ligger på litt under 400 000 linjer, og har brukervennlighet 10.0 på kaggle. Det betyr at den er lett å bruke/forstå. Datafilen er en csv fil, på 10,5 MB og den vil bli oppdatert ukentlig. Datasettet er ikke komplett når det er feil og mangler i noen av linjene. Brukeren bak datasettet er lisensert fra CC0: Public Domain, denne lisensen har ingen copyright regler slik at vi kan kopiere, modifiserer og bruk dataene slik vi vil. Les mer om lisensen her: https://creativecommons.org/publicdomain/zero/1.0/ 
+
+Link til datasett: https://www.kaggle.com/datasets/l3llff/wind-power/data 
 
 ### Valg av datasett
-Etter å ha vurdert begge datasettene grundig, har vi valgt å gå videre med datasett 2 om vindkraftproduksjon i Tyskland. Vurderingene vi tok i betrakning var troverdighet til forfatteren/brukeren bak datasettet, om datasettet var komplett eller hadde feil og mangler som vi kunne filtrere ut og håndtere. Vi så også på hvor store filene var og ønsket å gå videre med en større fil for å gjøre det vanskeligere for oss selv og vise forståelse. 
+Etter å ha vurdert begge datasettene grundig, har vi valgt å gå videre med datasett 2 om vindkraftproduksjon i Tyskland. Vurderingene vi tok i betrakning var troverdighet til forfatteren/brukeren bak datasettet, om datasettet var komplett eller hadde feil og mangler som vi kunne filtrere ut og håndtere. Vi så også på hvor store filene var og ønsket å gå videre med en større fil for å gjøre det vanskeligere for oss selv og vise forståelse. Datasett 2 fylte også flere av kravene vi selv hadde sett for oss at vi skulle gå videre med i prosjektet. 
 
 
 ### Implementering
-For å implementere datasettene har vi brukt ulike funksjoner i Python. Pandas er 
-Kagglehub
-.dataset_download
-pd.read_csv
-pd.to_datetime
-Errors = 'coerce'
-.iloc
-.loc
-.iterrows()
-chunksize = 
-.query
+For å implementere datasettene har vi brukt ulike funksjoner i Python. 
+- Pandas er et python bibliotek som vi har brukt til å analysere, behandle og manipulere dataene. Det er en veldig fin metode å bruke med tallbaserte data som csv-filer. 
+- Kagglehub er en pakke vi har brukt for å laste ned datasett dirkete fra Kaggle til Python. Kagglehub forenkler tilgangen vår til datasettet slik at vi slipper å laste ned data manuelt fra siden. Den brukes sammen med en API-nøkkel fra Kaggle for autentisering. 
+- .dataset_download er en funksjon fra kagglehub pakken vi har brukt for å få datafilene inn i prosjektet vårt. 
+- pd.read_csv er en funksjon fra pandas som vi har brukt til å kunne lese csv filen og lage dataframes av det. 
+- Errors = 'coerce', dette har vi brukt for å kunne lese tomme/feil i linejene. Det vil da bli printet Not a Time i stedenfor at koden krasjer. 
+- .iloc har vi brukt for å hente ut rader og kolonner basert på posisjon i datasettet. 
+- .loc gjør det samme som .iloc bare basert på etiketter/navn og ikke posisjon i datasettet.
+- .iterrows() har vi brukt når vi vill gå gjennom datasettetet en linje om gangen for å finne de linjene som har bestemte betingelser.
+- chunksize = 1000 har vi brukt for å dele opp datasettet i mindre "deler" når den blir lest igjennom i stedet for alle 400 000 på en gang. 
+- .query() har vi brukt for å kunne skrive inn de utrykkene/betingelsene vi vil ha som filtrerer ut linejene i datasettet. 
 
 ### Valg av csv
-Vi har valgt å bruke csv filer fordi .....
+Vi har valgt å bruke csv filer av flere grunner. Csv filer er enklere for oss å lese/forstå, de samarbeider ekstremt godt med pandas og dataframes når de er laget for datasett med rader og kolonner. Csv filer støttes nesten av alle dataverktøy som gjør de ekstremt fleksible i for eksempel python og excel. Når vi lette etter datafiler å bruke fant vi hovedsakelig flest csv filer og valgte på grunn av alt dette å gå videre med csv. 
 
 
 
