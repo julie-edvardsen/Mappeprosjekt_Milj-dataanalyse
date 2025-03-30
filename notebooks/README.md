@@ -5,16 +5,32 @@
 
 Vi har funnet to forskjellige miljødatasett fra kaggle.no som vi har valgt å implementere. Kaggle er en nettside hvor dataforskere og utviklere kan hente og dele data for videre bruk i forskning og utviklingsprosjekter.
 
+### Datasett 1
 Det første datasettet vi fant er data hvert 10 minutt fra en vindturbin i Tyrkia for hele 2018. Datasettet ligger på rundt 50 000 linjer, består av f.eks. vindhastighet, vindretning og generert energi. Datasettet er ikke helt komplett når det mangler data fra noen av dagene. Brukeren bak datasettet har ikke en lisens på kaggle og der er dermed en faktor vi bruker når vi vurderer datasettet, og det står heller ingenting om hvor ofte datasettet vil bli oppdatert. Datafilen er en csv fil på 2 MB, og er hentet ut med Scada Systems. Dataene er lett å hente ut og inne på kaggle står det akkurtatt hva datafilen består av. 
 
-Det andre datasettet vi fant er 
+### Datasett 2
+Det andre datasettet vi fant beståer av omfattende verdier av vindkraftproduksjon i Tyskland hvert 15. minutt fra 2011 til 2020. Datasettet ligger på over 400 000 linjer, og har brukervennlighet 10.0 på kaggle. Det betyr at den er lett å bruke/forstå. Datafilen er en csv fil, på 10,5 MB og den vil bli oppdatert ukentlig. Brukeren bak datasettet er lisensert fra CC0: Public Domain, denne lisensen har ingen copyright regler slik at vi kan kopiere, modifiserer og bruk dataene slik vi vil. Les mer om lisensen her: https://creativecommons.org/publicdomain/zero/1.0/ 
 
-hvorfor valgt datasett
+### Valg av datasett
+Etter å ha vurdert begge datasettene grundig, har vi valgt å gå videre med datasett 2 om vindkraftproduksjon i Tyskland. Vurderingene vi tok i betrakning var troverdighet til forfatteren/brukeren bak datasettet, om datasettet var komplett eller hadde feil og mangler som vi kunne filtrere ut og håndtere. Vi så også på hvor store filene var og ønsket å gå videre med en større fil for å gjøre det vanskeligere for oss selv og vise forståelse. 
 
-implementering:
-vi har brukt kaggle, pd.read csv
 
-hvorfor vi har valgt csv.
+### Implementering
+For å implementere datasettene har vi brukt ulike funksjoner i Python. Pandas er 
+Kagglehub
+.dataset_download
+pd.read_csv
+pd.to_datetime
+Errors = 'coerce'
+.iloc
+.loc
+.iterrows()
+chunksize = 
+.query
+
+### Valg av csv
+Vi har valgt å bruke csv filer fordi .....
+
 
 
 # Oppgave 3
