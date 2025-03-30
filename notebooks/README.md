@@ -72,14 +72,16 @@ Vi har valgt å bruke csv filer fordi .....
 
 ## Bruk av Pandas SQL (sqldf) til datamanipulering sammenliknet med tradisjonelle Pandas-operasjoner
 
-Pandas SQL er enklere når man skal kode mer komplekse "spørringer". Som man for eksempel kan se i kode del 3 i oppgave 3. Dette er mye kortere og mer oversikkelig, samt enklere å lese, enn hvis man skulle gjort det samme med Pandas-operasjoner.
+Pandas SQL er enklere når man skal kode mer komplekse "spørringer". Som man for eksempel kan se i kode-del 3 i oppgave 3. Dette blir mye kortere, mer oversikkelig, samt enklere å lese, enn hvis man skulle gjort det samme med Pandas-operasjoner.
 
-Pandas SQL har også noen begrensninger. Det er ikke optimalt for veldig store datasett, da det er tregere en "normal" Pandas. Og noen få funk  
+Pandas SQL har også noen begrensninger. Det er ikke optimalt for veldig store datasett, da det er tregere en "normal" Pandas. Og noen få funksjoner i Pandas, som for eksempel; .resample(), .pivot() og .rolling(), finnes ikke i SQL.
 
+Man burde bruke SQL om man kjenner det godt fra før, jobber med mange sammenslåtte tabeller, eller om datasettet er litt mindre. Man burde bruke 'vanlig' pandas om man jobber med store datasett(flere millioner av rader), eller om man trenger veldig kraftige tidsseriefunksjoner.
 
 
 ## Uregelmessigheter man kan forvente å møte på og hvordan de kan bli håndtert
 
+Vi forventer å møte på uregelmessigheter som manglende/ugyldige MW-verdier, feil med tidssone/tid-konvertering, og eventuelle overflødlige kolonner. I oppgave 3 har vi allerede funnet og fjernet dublikater, og identifisert manglende tidsintervaller og fylt de inn med gjenomsnittet av MW-verdiene som er i radene over og under. 
 
 
 
