@@ -30,7 +30,7 @@ For å implementere datasettene har vi brukt ulike funksjoner i Python.
 - .loc gjør det samme som .iloc bare basert på etiketter/navn og ikke posisjon i datasettet.
 - .iterrows() har vi brukt når vi vill gå gjennom datasettetet en linje om gangen for å finne de linjene som har bestemte betingelser.
 - chunksize = 1000 har vi brukt for å dele opp datasettet i mindre "deler" når den blir lest igjennom i stedet for alle 400 000 på en gang. 
-- .query() har vi brukt for å kunne skrive inn de utrykkene/betingelsene vi vil ha som filtrerer ut linejene i datasettet. 
+- .query() har vi brukt for å kunne skrive inn de utrykkene/betingelsene vi vil ha som filtrerer ut linjene i datasettet. 
 
 ### Valg av csv
 Vi har valgt å bruke csv filer av flere grunner. Csv filer er enklere for oss å lese/forstå, de samarbeider ekstremt godt med pandas og dataframes når de er laget for datasett med rader og kolonner. Csv filer støttes nesten av alle dataverktøy som gjør de ekstremt fleksible i for eksempel python og excel. Når vi lette etter datafiler å bruke fant vi hovedsakelig flest csv filer og valgte på grunn av alt dette å gå videre med csv. 
