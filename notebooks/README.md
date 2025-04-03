@@ -89,6 +89,13 @@ Vi forventer å møte på uregelmessigheter som manglende/ugyldige MW-verdier, f
 
 
 
+# Oppgave 4
 
 
+# Oppgave 5 - Visualisering av miljødata
 
+# Oppgave 6 - Prediktiv analyse
+
+# Refleksjonsnotat av prosjektet
+
+I dette prosjektet har vi utforsket ulike metoder og funksjoner som innebærer i bruk av API-er, databehandling, dataanalyse og visualisering. 
