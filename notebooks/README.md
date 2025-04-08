@@ -91,6 +91,8 @@ Vi forventer å møte på uregelmessigheter som manglende/ugyldige MW-verdier, f
 
 # Oppgave 4
 
+## Hå
+
 
 # Oppgave 5 - Visualisering av miljødata
 
