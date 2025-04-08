@@ -91,7 +91,9 @@ Vi forventer å møte på uregelmessigheter som manglende/ugyldige MW-verdier, f
 
 # Oppgave 4
 
-## Hå
+## Håndtering av eventuelle skjevheter i dataen under videre analyse
+
+Ved å bruke statistiske mål som gjennomsnitt, median og standaravvik kan man oppdage om dataen er uriktig. 
 
 
 # Oppgave 5 - Visualisering av miljødata
