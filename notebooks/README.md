@@ -93,8 +93,11 @@ Vi forventer å møte på uregelmessigheter som manglende/ugyldige MW-verdier, f
 
 ## Håndtering av eventuelle skjevheter i dataen under videre analyse
 
-Ved å bruke statistiske mål som gjennomsnitt, median og standaravvik kan man oppdage om dataen er uriktig. 
+Tidligere har det blitt gjennomført en grunndig datarensing. Dette innebærer å identifisere og håndtere manglende verdier, og fjerne dublikater som kan påvirke analysen senere. For å sikre at analysen er pålitelig vil statistiske mål som median, gjennomsnitt og standaravvik bli brukt. Dette vil gi et mer realistisk bilde av datastrukturen. Ulike perioder og segmenter i datasettet vil også bli sammenliknet for å se om dataen er konsistent. 
+ 
+## Planlagte visualiseringer for å støtte analysen
 
+For å støtte analysen vil linjediagram, søylediagram og boksplott bli brukt for ulike visualiseringer. Linjediagram brukes for å vise utviklingen i kraftprodukjsonen over tid. Denne type diagram er best for å vise forskjellen mellom to perioder. Søylediagram brukes for å sammenlikne totalprodukjsonen mellom forskjellige perioder. Denne er best hvis man vil se hvilke månder/år som produserer mest kraft, som gjør det enklere å trekke raske konklusjoner. Boksplott brukes for å analysere spredningen i dataene. Boksplott er fint å bruke når man vil vurdere stabiliteten i kraft produkjsonen. 
 
 # Oppgave 5 - Visualisering av miljødata
 
