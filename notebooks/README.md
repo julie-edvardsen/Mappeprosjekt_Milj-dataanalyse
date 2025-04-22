@@ -105,14 +105,19 @@ For å støtte analysen vil linjediagram, søylediagram og boksplott bli brukt f
 
 # Refleksjonsnotat av prosjektet
 
-I dette prosjektet har vi utforsket ulike metoder og funksjoner som innebærer i bruk av API-er, databehandling, dataanalyse og visualisering. 
+I dette prosjektet har vi utforsket ulike metoder og funksjoner som innebærer i bruk av API-er, databehandling, dataanalyse og visualisering. I starten lærte vi å identifisere relevante datakilder og hente ut data både fra åpne API-er og statiske filer. Vi fant ut hvor viktig det er å strukturere innhentingsprosessen av API-en. 
+Under databehandlingen ble vi bedre på å rengjøre og forandre data (manglende verdier, dublikerte verdier), og sette sammen de nye datasettene til et nytt komplett datasett. 
+I løpet av arbeidet med prosjektet lærte vi om flere nye ferdigheter. Som f.eks. bruken av pandas til datamanipulering. Gjennom Matplotlib og Seaborn lærte vi å lage samensatte grafer. 
 
 Vurderingskriterier:
 
 - Refleksjoner over hva du har lært om datainnsamling, databehandling, dataanalyse og visualisering.
 - Beskrivelse av nye ferdigheter som ble tilegnet, for eksempel bruk av spesifikke biblioteker (Pandas, NumPy, Matplotlib, etc.) og programmeringskonsepter.
 - Identifisering av spesifikke utfordringer som oppstod under prosjektet, for eksempel problemer med datakvalitet, håndtering av manglende verdier, eller tekniske problemer med API-er.
+
 - Refleksjoner over samarbeidet i gruppen, inkludert hvordan oppgaver ble fordelt og hvordan kommunikasjonen fungerte.
+Alle i gruppen har deltatt likt med arbeid i prosjektet. Alle har jobbet litt på alle oppgaver og sammarbeidet har vært meget godt.
+
 - Vurdering av de endelige resultatene, inkludert kvaliteten på visualiseringene og analysene.
 - Ideer til hvordan prosjektet kan forbedres i fremtiden, både i forhold til tekniske aspekter og prosjektledelse.
 - Mulige retninger for videre forskning eller utvikling basert på erfaringene fra prosjektet.
