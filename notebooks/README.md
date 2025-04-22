@@ -101,7 +101,13 @@ For å støtte analysen vil linjediagram, søylediagram og boksplott bli brukt f
 
 # Oppgave 5 - Visualisering av miljødata
 
+
+
+
 # Oppgave 6 - Prediktiv analyse
+
+
+
 
 # Refleksjonsnotat av prosjektet
 
