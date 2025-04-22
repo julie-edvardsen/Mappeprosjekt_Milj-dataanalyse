@@ -114,18 +114,8 @@ For å støtte analysen vil linjediagram, søylediagram og boksplott bli brukt f
 I dette prosjektet har vi utforsket ulike metoder og funksjoner som innebærer i bruk av API-er, databehandling, dataanalyse og visualisering. I starten lærte vi å identifisere relevante datakilder og hente ut data både fra åpne API-er og statiske filer. Vi fant ut hvor viktig det er å strukturere innhentingsprosessen av API-en. 
 Under databehandlingen ble vi bedre på å rengjøre og forandre data (manglende verdier, dublikerte verdier), og sette sammen de nye datasettene til et nytt komplett datasett. 
 I løpet av arbeidet med prosjektet lærte vi om flere nye ferdigheter. Som f.eks. bruken av pandas til datamanipulering. Gjennom Matplotlib og Seaborn lærte vi å lage samensatte grafer. 
+Underveis i prosjektet møtte vi på flere utfordinger. Kvaliteten på dataen var ujevn, med mange manglende tidsintervaller og verdier. Etter hvert fant vi også ut at det var mange av tidsintervallende som var dublikater med forskjellige verdier. For å løse dette tok vi gjennomsnittet av de to dublikatene og beholdt bare det. For å fylle inn de manglende tidsintervallene tok vi gjennomsnittet av verdien over og under de manglende tidene.
+Samarbeidet i gruppen fungerte godt. Oppgavene ble fordelt slik at alle gruppemedlemmene fikk prøve seg på både datainnsamling, koding, analyse og doumentasjon. Vi møttes en rekke ganger for å jobbe med prosjektet i person. Bruken av Gitub gjorde at det var enkelt å synkronisere arbeidet. Resultatet vi leverer vil vi si er av høy kvalitet. Målingene er nøyaktige og visualiseringene er både detaljerte men likevel enkle for eksterne å forstå. 
+En forandring som kan gjøres ved senere gjennomføringer av slike prosjekter er å få oppgaven tydligere frem i oppgaveteksten. Vi brukte en del tid i starten bare på å fortså hva oppgavene faktisk ba oss om å gjøre. Ellers syntest vi prosjektet var godt lagt opp, med tilstrekkelig med tid. De viktigste læringspunktene for oss har vært hvordan jobbe systematisk med et stort datasett, og hvordan analysere dette. Vi mener at erfaringene vi har fått ved dette prosjektet vil anvendelige i både fremtidige studier og senere i arbeidslivet, da både når det gjelder den tekniske kompetansen og evnen til å jobbe sammen som en gruppe.
 
-Vurderingskriterier:
 
-- Refleksjoner over hva du har lært om datainnsamling, databehandling, dataanalyse og visualisering.
-- Beskrivelse av nye ferdigheter som ble tilegnet, for eksempel bruk av spesifikke biblioteker (Pandas, NumPy, Matplotlib, etc.) og programmeringskonsepter.
-- Identifisering av spesifikke utfordringer som oppstod under prosjektet, for eksempel problemer med datakvalitet, håndtering av manglende verdier, eller tekniske problemer med API-er.
-
-- Refleksjoner over samarbeidet i gruppen, inkludert hvordan oppgaver ble fordelt og hvordan kommunikasjonen fungerte.
-Alle i gruppen har deltatt likt med arbeid i prosjektet. Alle har jobbet litt på alle oppgaver og sammarbeidet har vært meget godt.
-
-- Vurdering av de endelige resultatene, inkludert kvaliteten på visualiseringene og analysene.
-- Ideer til hvordan prosjektet kan forbedres i fremtiden, både i forhold til tekniske aspekter og prosjektledelse.
-- Mulige retninger for videre forskning eller utvikling basert på erfaringene fra prosjektet.
-- Oppsummering av de viktigste læringspunktene og hvordan prosjektet har bidratt til studentenes forståelse av datavitenskap og miljøstudier.
-- Personlige tanker om hvordan erfaringene fra prosjektet kan anvendes i fremtidige studier eller yrkesliv.
