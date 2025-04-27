@@ -99,15 +99,6 @@ Tidligere har det blitt gjennomført en grunndig datarensing. Dette innebærer �
 
 For å støtte analysen vil linjediagram, søylediagram og boksplott bli brukt for ulike visualiseringer. Linjediagram brukes for å vise utviklingen i kraftprodukjsonen over tid. Denne type diagram er best for å vise forskjellen mellom to perioder. Søylediagram brukes for å sammenlikne totalprodukjsonen mellom forskjellige perioder. Denne er best hvis man vil se hvilke månder/år som produserer mest kraft, som gjør det enklere å trekke raske konklusjoner. Boksplott brukes for å analysere spredningen i dataene. Boksplott er fint å bruke når man vil vurdere stabiliteten i kraft produkjsonen. 
 
-# Oppgave 5 - Visualisering av miljødata
-
-
-
-
-# Oppgave 6 - Prediktiv analyse
-
-
-
 
 # Refleksjonsnotat av prosjektet
 
