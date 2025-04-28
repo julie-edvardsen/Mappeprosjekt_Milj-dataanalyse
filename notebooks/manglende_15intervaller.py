@@ -2,6 +2,12 @@
 import pandas as pd
 import kagglehub
 from pandasql import sqldf
+import os
+from pathlib import Path
+
+#Vi vil at csv filen skal ligge i data mappen utenfor notebooks mappen.
+BASE_DIR = Path(__file__).parent.parent
+out_path = BASE_DIR / "data" / "manglende_intervaller.csv"
 
 #Laster ned datasettene
 pathGermany = kagglehub.dataset_download("l3llff/wind-power")
@@ -43,7 +49,7 @@ if not manglende_intervaller_df.empty:
     print(f"\nAntall manglende 15-minutters intervaller: {len(manglende_intervaller_df)}")
     
     #Lagrer resultatene i en CSV-fil
-    manglende_intervaller_df.to_csv("manglende_intervaller.csv", index=False)
+    manglende_intervaller_df.to_csv(out_path, index=False)
     print("\nManglende intervaller er også lagret i 'manglende_intervaller.csv'.")
 else:
     print("Ingen manglende 15-minutters intervaller")

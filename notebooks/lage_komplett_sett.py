@@ -1,6 +1,12 @@
 import pandas as pd
 import kagglehub
 from pandasql import sqldf
+import os
+from pathlib import Path
+
+#Vi vil at csv filen skal ligge i data mappen utenfor notebooks mappen.
+BASE_DIR = Path(__file__).parent.parent
+out_path = BASE_DIR / "data" / "komplett_data_med_utfylte_mengder.csv"
 
 #Laster ned datasettene
 pathGermany = kagglehub.dataset_download("l3llff/wind-power")
@@ -12,13 +18,13 @@ df_germany = pd.read_csv(f"{pathGermany}/data.csv")
 
 df_germany['datetime'] = pd.to_datetime(df_germany['dt'], errors='coerce')
 
-# Her brukes list comprehension for å lage intervaller på 15 minutter
+#Her brukes list comprehension for å lage intervaller på 15 minutter
 alle_intervaller_df = pd.DataFrame({
     'datetime': pd.date_range(start=df_germany['datetime'].min(),
                               end=df_germany['datetime'].max(),
                               freq='15min')
 })
-# Finner mangler med sql
+#Finner mangler med sql
 query = """
     SELECT a.datetime
     FROM alle_intervaller_df a
@@ -28,7 +34,7 @@ query = """
 """
 manglende_intervaller_df = sqldf(query, locals())
 
-# List comprehension for å legge dataene i en DataFrame, så vi får ut en tabell
+#List comprehension for å legge dataene i en DataFrame, så vi får ut en tabell
 manglende_intervaller = [
     {'datetime': tidspunkt, 'MW': None}
     for tidspunkt in manglende_intervaller_df['datetime']
@@ -55,7 +61,8 @@ df_komplett = df_komplett.reset_index()
 
 
 #Lagrer resultatet til en ny csv fil 
-df_komplett.to_csv("komplett_data_med_utfylte_mengder.csv", index=False)
+df_komplett.to_csv(out_path, index=False)
+print(f"Data lagret i {out_path}")
 
 print("Data med utfylte verdier og fjernede duplikater er lagret som 'komplett_data_med_utfylte_mengder.csv'.")
 

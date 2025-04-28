@@ -3,6 +3,13 @@
 import pandas as pd
 import kagglehub
 from pandasql import sqldf
+import os
+from pathlib import Path
+
+#Vi vil at csv filen skal ligge i data mappen utenfor notebooks mappen.
+BASE_DIR = Path(__file__).parent.parent
+out_path = BASE_DIR / "data" / "dupliserte_tidspunkter.csv"
+
 
 #Laster ned datasettene
 pathGermany = kagglehub.dataset_download("l3llff/wind-power")
@@ -23,7 +30,7 @@ if not duplikater.empty:
     print("\nAntall ganger hvert tidspunkt forekommer:\n")
     print(antall_duplikater.to_string(index=False))
     # Lagrer resultatene i en CSV-fil til bruk senere
-    antall_duplikater.to_csv("dupliserte_tidspunkter.csv", index=False)
+    antall_duplikater.to_csv(out_path, index=False)
     print("\nDuplikatene er også lagret i 'dupliserte_tidspunkter.csv'.")
 else:
     print("Ingen dupliserte tidspunkter funnet.")

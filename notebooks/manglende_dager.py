@@ -25,3 +25,4 @@ else: #Om den er tom så skriv:
 
 
 
+#Her lagres ikke resultatet til noen annen csv fil fordi det ikke finnes noe data
