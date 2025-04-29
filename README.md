@@ -5,3 +5,7 @@ Dette mappeprosjektet er bygget opp av data fra et datasett om MW produksjon fra
 
 
 her må vi skrive om hvordan prosjektet er bygget opp og hvordan det skal kjøres osv.
+
+
+
+
