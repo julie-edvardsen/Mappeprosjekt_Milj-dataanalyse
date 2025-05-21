@@ -21,3 +21,7 @@ traitlets==5.14.3
 typing_extensions==4.13.2
 wcwidth==0.2.13
 widgetsnbextension==4.0.14
+pandas==1.5.3
+numpy==1.23.5
+kaggle==1.5.13
+plotly==5.15.0
