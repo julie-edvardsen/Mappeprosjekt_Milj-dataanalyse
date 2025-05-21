@@ -1,0 +1,1 @@
+Her finner du KI-deklarasjonen til Miljødataanalyse prosjektet.
