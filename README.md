@@ -8,10 +8,3 @@ her må vi skrive om hvordan prosjektet er bygget opp og hvordan det skal kjøre
 
 
 
-
-# Må gjøres:
-- endre på mappene
-- legge til mer README
-- endre koden etter endring i mappene
-- fjerne venv og skrive brukte biblioteker i en .txt
-- ki deklarasjon
